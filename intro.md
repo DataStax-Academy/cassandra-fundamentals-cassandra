@@ -25,14 +25,13 @@
      </div>
     </div>
     <div class="container px-4 py-2">
-        <div class="scenario-choices">Run this hands-on lab using Astra DB or Apache Cassandra®:</div><br/>
+        <div class="scenario-choices">Run this hands-on lab using Apache Cassandra®:</div><br/>
         <div class="row g-4 py-2 row-cols-1 row-cols-lg-1">
           <div class="feature col div-choice">
             <div class="logo-cassandra">
                 <img src="https://datastax-academy.github.io/katapod-shared-assets/images/logo-cassandra.png" height="40px" />
             </div>
-            <div class="cassandra-line1">Local deployment of open-source Apache Cassandra</div>
-            <div class="cassandra-line2">You will use a Cassandra cluster deployed locally in Gitpod using Docker.</div>
+            <div class="cassandra-line1">You will deploy and use a Cassandra cluster locally in Gitpod.</div>
             <br/>
             <a href='command:katapod.loadPage?[{"step":"step1"}]' class="btn btn-primary btn-cassandra">
               Start with Cassandra
