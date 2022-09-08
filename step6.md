@@ -26,7 +26,9 @@ wget https://archive.apache.org/dist/cassandra/4.0.5/apache-cassandra-4.0.5-bin.
 
 tar -xzf apache-cassandra-4.0.5-bin.tar.gz
 
-export PATH="$PATH:/workspace/cassandra/apache-cassandra-4.0.5/bin:/workspace/cassandra/apache-cassandra-4.0.5/tools/bin"
+rm apache-cassandra-4.0.5-bin.tar.gz
+
+mv apache-cassandra-4.0.5 $HOME/apache-cassandra
 ```
 
 <!-- NAVIGATION -->
