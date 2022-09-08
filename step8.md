@@ -53,6 +53,11 @@ SELECT * FROM users
 WHERE email = 'joe@datastax.com';
 ```
 
+✅ Exit the CQL shell:
+```
+exit
+```
+
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">
  <a href='command:katapod.loadPage?[{"step":"step7"}]'
