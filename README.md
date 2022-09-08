@@ -6,7 +6,7 @@
 * Learn about the main characteristics and benefits of Apache Cassandra™
 * Install, start and connect to a Cassandra instance
 
-_This scenario is available on our [https://www.datastax.com/learn/cassandra-fundamentals](https://www.datastax.com/learn/cassandra-fundamentals) site, where you can find many more resources to help you succeed with Apache Cassandra™._
+_This hands-on lab is available on our [https://www.datastax.com/learn/cassandra-fundamentals](https://www.datastax.com/learn/cassandra-fundamentals) site, where you can find many more resources to help you succeed with Apache Cassandra™._
 
 ## Start the hands-on lab:
 
