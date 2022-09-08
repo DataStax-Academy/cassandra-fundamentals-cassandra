@@ -31,7 +31,6 @@
             <div class="logo-cassandra">
                 <img src="https://datastax-academy.github.io/katapod-shared-assets/images/logo-cassandra.png" height="40px" />
             </div>
-            <div class="cassandra-line1">You will deploy and use a Cassandra cluster locally in Gitpod.</div>
             <br/>
             <a href='command:katapod.loadPage?[{"step":"step1"}]' class="btn btn-primary btn-cassandra">
               Start with Cassandra
