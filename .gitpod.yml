@@ -3,6 +3,7 @@ tasks:
     before: |
       printf 'export PATH="$HOME%s:$PATH"\n' "/apache-cassandra/bin" >> $HOME/.bashrc
       printf 'export PATH="$HOME%s:$PATH"\n' "/apache-cassandra/tools/bin" >> $HOME/.bashrc
+      printf 'unset JAVA_TOOL_OPTIONS\n' >> $HOME/.bashrc
     init: ""
     command: ""
 ports:
