@@ -36,7 +36,7 @@
             <div class="astradb-line1">Cloud database service built on Apache Cassandra</div>
             <div class="astradb-line2">You will connect to a free cloud database service that runs a Cassandra cluster for you.</div>
             <br/>
-            <a href='command:katapod.loadPage?[{"step":"step1-astra"}]' class="btn btn-primary btn-astra">
+            <a href='command:katapod.loadPage?[{"step":"step1"}]' class="btn btn-primary btn-astra">
               Start with Astra DB
             </a>
           </div>
@@ -47,7 +47,7 @@
             <div class="cassandra-line1">Local deployment of open-source Apache Cassandra</div>
             <div class="cassandra-line2">You will use a Cassandra cluster deployed locally in Gitpod using Docker.</div>
             <br/>
-            <a href='command:katapod.loadPage?[{"step":"step1-cassandra"}]' class="btn btn-primary btn-cassandra">
+            <a href='command:katapod.loadPage?[{"step":"step1"}]' class="btn btn-primary btn-cassandra">
               Start with Cassandra
             </a>   
           </div>
