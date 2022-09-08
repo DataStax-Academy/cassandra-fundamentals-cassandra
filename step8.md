@@ -18,55 +18,40 @@
 
 <!-- CONTENT -->
 
-<div class="step-title">Design update U1</div>
+<div class="step-title">Connecting to Cassandra</div>
 
-✅ Cancel order `113-3827060-8722206` placed by user `joe` on `2020-11-17` at `22:20:43` by updating its status from `pending` to `canceled`:
+We use the CQL shell, a command-line client, to connect to Cassandra and execute CQL statements.
 
-<details>
-  <summary>Solution</summary>
-
-<p>✅ Update the "source-of-truth" table using a lightweight transaction:</p>
-
+✅ Start the CQL shell:
 ```
-UPDATE orders_by_id 
-SET order_status = 'canceled' 
-WHERE order_id = '113-3827060-8722206'
-IF order_status = 'pending';
+cqlsh
 ```
 
-<p>✅ Update the other tables if and only if the previous transaction was successfully applied:</p>
-
+✅ Create the keyspace, table and row in Cassandra:
 ```
-UPDATE orders_by_user 
-SET order_status = 'canceled' 
-WHERE order_id = '113-3827060-8722206'
-  AND user_id = 'joe'
-  AND order_timestamp = '2020-11-17 22:20:43';
+CREATE KEYSPACE killr_video
+WITH replication = {
+  'class': 'SimpleStrategy', 
+  'replication_factor': 1 };
+  
+USE killr_video;
 
-INSERT INTO order_status_history_by_id (order_id, status_timestamp, order_status)
-VALUES ('113-3827060-8722206',TOTIMESTAMP(NOW()),'canceled');
-```
+CREATE TABLE users (
+  email TEXT PRIMARY KEY,
+  name TEXT,
+  age INT,
+  date_joined DATE
+);
 
-<p>✅ Optionally, verify the changes:</p>
-
-```
-SELECT order_status
-FROM orders_by_id
-WHERE order_id = '113-3827060-8722206';
-
-SELECT order_status
-FROM orders_by_user
-WHERE order_id = '113-3827060-8722206'
-  AND user_id = 'joe'
-  AND order_timestamp = '2020-11-17 22:20:43';
-
-SELECT order_status
-FROM order_status_history_by_id
-WHERE order_id = '113-3827060-8722206'
-LIMIT 1;
+INSERT INTO users (email, name, age, date_joined) 
+VALUES ('joe@datastax.com', 'Joe', 25, '2020-01-01');  
 ```
 
-</details>
+✅ Retrieve the row from Cassandra:
+```
+SELECT * FROM users
+WHERE email = 'joe@datastax.com';
+```
 
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">
