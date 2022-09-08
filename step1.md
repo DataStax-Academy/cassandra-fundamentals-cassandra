@@ -18,30 +18,18 @@
 
 <!-- CONTENT -->
 
-<div class="step-title">Connect to Cassandra and create a keyspace</div>
+<div class="step-title">What is Cassandra?</div>
 
-✅ Start Cassandra:
-```
-./cassandra
-```
+Apache Cassandra™ is an *open-source* *distributed NoSQL database* that delivers 
+continuous *availability*, high *performance*, and linear *scalability*. Cassandra is suited equally well for 
+*on-prem*, *multi-cloud* and *hybrid-cloud* deployments.
 
-✅ Start the CQL shell:
-```
-cqlsh
-```
-
-✅ Create the `order_management_data` keyspace:
-```
-CREATE KEYSPACE order_management_data
-WITH replication = {
-  'class': 'NetworkTopologyStrategy', 
-  'DC-Houston': 1 };
-```
-
-✅ Set the current working keyspace:
-```
-USE order_management_data;
-```
+Hundreds of enterprises choose Cassandra as the main persistence layer for their modern *data-driven* and *cloud-native applications*. 
+Some of the most important benefits of using Cassandra include:
+- Cassandra's availability supports *mission-critical* applications 
+- Cassandra's performance and scalability translate to *high-throughput* and *high-growth* applications 
+- Cassandra's data distribution and replication enable *global presence* and *workload separation*  
+- Cassandra's multi-cloud and hybrid-cloud capabilities mean *zero lock-in* and *workload mobility*
 
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">

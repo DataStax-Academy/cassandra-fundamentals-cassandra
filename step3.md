@@ -18,57 +18,14 @@
 
 <!-- CONTENT -->
 
-<div class="step-title">Populate tables</div>
+<div class="step-title">High availability</div>
 
-✅ Execute the CQL script to insert sample data:
-```
-SOURCE 'assets/order_management_data.cql'
-```
-
-✅ Retrieve all rows from table `orders_by_user`:
-```
-SELECT * FROM orders_by_user;        
-```
-
-✅ Retrieve all rows from table `orders_by_id`:
-```
-EXPAND ON;
-
-SELECT 
-  order_id,
-  item_name,
-  item_id,
-  item_description,
-  item_price,
-  item_quantity,
-  order_status,
-  order_timestamp,
-  order_subtotal,
-  order_shipping,
-  order_tax,
-  order_total,
-  payment_summary,
-  payment_details,
-  billing_summary,
-  billing_details,
-  shipping_summary,
-  shipping_details,
-  delivery_id,
-  delivery_details 
-FROM orders_by_id;
-
-EXPAND OFF;
-```
-
-✅ Retrieve all rows from table `orders_by_user_item`:
-```
-SELECT * FROM orders_by_user_item;                    
-```
-
-✅ Retrieve all rows from table `order_status_history_by_id`:
-```
-SELECT * FROM order_status_history_by_id; 
-```
+Cassandra is famous for high availability that mission-critical applications require. The key Cassandra 
+design features that contribute to availability include:
+- Peer-to-peer architecture with no single point of failure
+- Fault-tolerance via replication and tunable consistency
+- Best-in-class multi-datacenter support
+- No downtime or interruption due to node maintenance
 
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">

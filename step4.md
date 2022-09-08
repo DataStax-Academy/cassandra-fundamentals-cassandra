@@ -18,22 +18,11 @@
 
 <!-- CONTENT -->
 
-<div class="step-title">Design query Q1</div>
+<div class="step-title">Multi-cloud and hybrid-cloud</div>
 
-✅ Find all orders placed by user `joe` between dates `2020-01-01` and `2020-12-31`, inclusive; sort by order timestamp (desc):
- 
-<details>
-  <summary>Solution</summary>
-
-```
-SELECT * 
-FROM orders_by_user 
-WHERE user_id = 'joe'
-  AND order_timestamp >= '2020-01-01'
-  AND order_timestamp <  '2021-01-01';
-```
-
-</details>
+Cassandra is built to run in any cloud, while being independent from any single cloud provider ecosystem. 
+Cassandra is an ideal choice for multi-cloud and hybrid-cloud deployments, where different datacenters of the same Cassandra cluster 
+run in different clouds or use a combination of cloud and on-prem environments.
 
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">
