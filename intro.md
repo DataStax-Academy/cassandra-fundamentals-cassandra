@@ -26,9 +26,6 @@
     </div>
     <div class="container px-4 py-2">
         <div class="scenario-choices">Run this hands-on lab using Apache Cassandra®:</div><br/>
-        <a href='command:katapod.loadPage?[{"step":"step1"}]' class="btn btn-primary btn-cassandra">
-              Start with Cassandra
-        </a> 
         <div class="row g-4 py-2 row-cols-1 row-cols-lg-1">
           <div class="feature col div-choice">
             <div class="logo-cassandra">
