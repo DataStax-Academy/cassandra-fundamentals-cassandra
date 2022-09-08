@@ -11,17 +11,15 @@
     <div class="container px-4 py-2">
      <div class="row g-4 py-2 row-cols-1 row-cols-lg-1">
       <div class="feature col div-choice">
-            <div class="scenario-description">Explore how online orders can be stored and queried in Cassandra NoSQL database.</div>
+            <div class="scenario-description">Learn about Cassandra advantages and install your first Cassandra NoSQL database instance.</div>
             <ul>
               <li><span class="scenario-description-attribute">Difficulty</span>: Beginner</li>
-              <li><span class="scenario-description-attribute">Time</span>: 15 minutes</li>
-              <li><span class="scenario-description-attribute">Prerequisite</span>: <a href="https://www.datastax.com/learn/data-modeling-by-example/order-management" target="_blank">how to create a data model for an order management system</a></li>
+              <li><span class="scenario-description-attribute">Time</span>: 10 minutes</li>
             </ul>
             <div class="scenario-objectives">In this hands-on lab, you will:</div>
             <ul>
-              <li><span class="scenario-objective">Create tables for an order management use case</span></li>
-              <li><span class="scenario-objective">Populate tables with sample order management data</span></li>
-              <li><span class="scenario-objective">Design and execute CQL queries over order management data</span></li>
+              <li><span class="scenario-objective">Learn about the main characteristics and benefits of Apache Cassandra™</span></li>
+              <li><span class="scenario-objective">Install, start and connect to a Cassandra instance</span></li>
             </ul>
       </div>
      </div>
@@ -29,17 +27,6 @@
     <div class="container px-4 py-2">
         <div class="scenario-choices">Run this hands-on lab using Astra DB or Apache Cassandra®:</div><br/>
         <div class="row g-4 py-2 row-cols-1 row-cols-lg-1">
-          <div class="feature col div-choice">
-            <div class="logo-astradb">
-              <img src="https://datastax-academy.github.io/katapod-shared-assets/images/logo-astradb.svg" height="40px" />
-            </div>
-            <div class="astradb-line1">Cloud database service built on Apache Cassandra</div>
-            <div class="astradb-line2">You will connect to a free cloud database service that runs a Cassandra cluster for you.</div>
-            <br/>
-            <a href='command:katapod.loadPage?[{"step":"step1"}]' class="btn btn-primary btn-astra">
-              Start with Astra DB
-            </a>
-          </div>
           <div class="feature col div-choice">
             <div class="logo-cassandra">
                 <img src="https://datastax-academy.github.io/katapod-shared-assets/images/logo-cassandra.png" height="40px" />
