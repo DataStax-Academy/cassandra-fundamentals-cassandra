@@ -18,7 +18,7 @@
 
 <!-- CONTENT -->
 
-<div class="step-title">Design query Q4</div>
+<div class="step-title">Starting Cassandra</div>
 
 ✅ Start Cassandra:
 ```
