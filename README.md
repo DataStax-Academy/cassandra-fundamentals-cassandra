@@ -1,6 +1,6 @@
 # Introduction to Apache Cassandra™
 
-## Learn about Cassandra benefits and install your first Cassandra NoSQL database instance
+## Learn about Cassandra advantages and install your first Cassandra NoSQL database instance
 
 **In this hands-on lab, you will:**
 * Learn about the main characteristics and advantages of Apache Cassandra™
