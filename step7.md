@@ -20,18 +20,19 @@
 
 <div class="step-title">Design query Q4</div>
 
-✅ Find a status history for order `111-0461064-1669732`; sort by status timestamp (desc):
-
-<details>
-  <summary>Solution</summary>
-
+✅ Start Cassandra:
 ```
-SELECT * 
-FROM order_status_history_by_id
-WHERE order_id = '111-0461064-1669732'; 
+cassandra
 ```
 
-</details>
+In the terminal, observe the log output while Cassandra is starting. Wait for message `Node localhost/127.0.0.1:7000 state jump to NORMAL` and hit <kbd>enter</kbd> or <kbd>return</kbd> on the keyboard to proceed.
+
+✅ Check the status of Cassandra:
+```
+nodetool status
+```
+
+The status/state column in the output should report `UN`, which stands for Up/Normal.
 
 <!-- NAVIGATION -->
 <div id="navigation-bottom" class="navigation-bottom">
