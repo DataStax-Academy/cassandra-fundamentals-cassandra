@@ -1,7 +1,7 @@
 <!-- TOP -->
 <div class="top">
   <img src="https://datastax-academy.github.io/katapod-shared-assets/images/ds-academy-logo.svg" />
-  <span class="scenario-title">Order Management Data Modeling</span>
+  <span class="scenario-title">Introduction to Apache Cassandra®</span>
   <span class="scenario-subtitle">ℹ️ For technical support, please contact us via <a href="mailto:aleksandr.volochnev@datastax.com">email</a> or <a href="https://dtsx.io/aleks">LinkedIn</a>.</span> 
 </div>
 
@@ -18,7 +18,7 @@
             </ul>
             <div class="scenario-objectives">In this hands-on lab, you will:</div>
             <ul>
-              <li><span class="scenario-objective">Learn about the main characteristics and benefits of Apache Cassandra™</span></li>
+              <li><span class="scenario-objective">Learn about the main characteristics and benefits of Apache Cassandra</span></li>
               <li><span class="scenario-objective">Install, start and connect to a Cassandra instance</span></li>
             </ul>
       </div>
