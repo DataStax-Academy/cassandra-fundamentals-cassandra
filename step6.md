@@ -18,7 +18,7 @@
 
 <!-- CONTENT -->
 
-<div class="step-title">Design query Q3</div>
+<div class="step-title">Installing Cassandra</div>
 
 ✅ Download and install Cassandra:
 ```
