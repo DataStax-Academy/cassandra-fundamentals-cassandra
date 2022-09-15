@@ -31,12 +31,12 @@ cqlsh
 
 ✅ Create the keyspace, table and row in Cassandra:
 ```
-CREATE KEYSPACE killr_video
+CREATE KEYSPACE my_keyspace
 WITH replication = {
   'class': 'SimpleStrategy', 
   'replication_factor': 1 };
   
-USE killr_video;
+USE my_keyspace;
 
 CREATE TABLE users (
   email TEXT PRIMARY KEY,
