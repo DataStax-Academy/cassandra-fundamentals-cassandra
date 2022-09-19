@@ -22,7 +22,7 @@
 
 <div class="step-title">What is Cassandra?</div>
 
-Apache Cassandra™ is an *open-source* *distributed NoSQL database* that delivers 
+Apache Cassandra is an *open-source* *distributed NoSQL database* that delivers 
 continuous *availability*, high *performance*, and linear *scalability*. Cassandra is suited equally well for 
 *on-prem*, *multi-cloud* and *hybrid-cloud* deployments.
 
